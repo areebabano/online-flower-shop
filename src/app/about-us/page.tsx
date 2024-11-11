@@ -41,7 +41,7 @@ const AboutPage = () => {
       </h2>
       <p className="mt-6 text-lg max-w-3xl mx-auto font-serif text-gray-700 leading-relaxed">
         At <b><i>Floral Elegance</i></b>&apos; we are committed to providing the highest quality floral arrangements for every occasion. 
-        Whether it's a wedding, anniversary, or just because, our flowers are delivered with love and care.
+        Whether it&apos;s a wedding, anniversary, or just because, our flowers are delivered with love and care.
       </p>
     </div>
 
