@@ -178,7 +178,7 @@ const FlowerShopSection: React.FC = () => {
               onClick={applyDiscount}
               className="border-2 border-white text-white font-serif font-bold py-2 px-6 rounded-full hover:bg-white hover:text-pink-600 transition duration-300"
             >
-              Apply Discount
+              Apply Discount 
             </button>
           </div>
           {discountAmount > 0 && (
@@ -267,7 +267,7 @@ const FlowerShopSection: React.FC = () => {
                 onClick={handleAddToCart}
                 className="bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 transition-all duration-300"
               >
-                Add to Cart
+                Add to Cart 
               </button>
               <button
                 onClick={() => toggleLike(quickViewProduct.id)}
