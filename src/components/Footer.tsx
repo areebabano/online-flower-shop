@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTwitter, FaEnvelope, FaPinterest } from 'react-icons/fa';
 import { PiFlowerLotusLight } from 'react-icons/pi';
 
 const Footer = () => {
@@ -23,6 +23,9 @@ const Footer = () => {
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-pink-300 transition duration-300">
               <FaTwitter size={24} />
+            </a>
+            <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" className="text-gray-200 hover:text-pink-300 transition duration-300">
+              <FaPinterest size={24} />
             </a>
             <a href="mailto:info@floralelegance.com" className="text-gray-200 hover:text-pink-300 transition duration-300">
               <FaEnvelope size={24} />

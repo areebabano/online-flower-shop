@@ -86,59 +86,52 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen py-20 px-8 font-serif pt-40">
-
-      {/* Contact Header Section with images */}
-      <section className="text-center mb-12 relative">
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
-          <Image
-            src="/flower1.jpg"
-            alt="Flower Left"
-            height={200}
-            width={200}
-            layout="intrinsic"
-          />
-        </div>
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-          <Image
-            src="/flower1.jpg"
-            alt="Flower Right"
-            height={210}
-            width={210}
-            layout="intrinsic"
-          />
-        </div>
+    <div className="bg-white text-gray-900 font-serif">
+  {/* Contact Header Section with images */}
+  <section className="py-16 px-6 bg-white flex flex-col items-center mt-10">
+    <div className="flex flex-col md:flex-row items-center gap-6 max-w-4xl mx-auto">
+      <div className="w-full md:w-1/4 flex justify-center">
+        <Image
+          src="/flower1.jpg"
+          alt="Flower Left"
+          height={200}
+          width={200}
+          layout="intrinsic"
+        />
+      </div>
+      <div className="text-center md:w-1/2">
         <h1 className="text-4xl font-bold font-serif text-black mb-6">
           <span className="text-pink-700 mr-2">&#9733;</span> Get In Touch
         </h1>
-        {/* <h1 className="text-4xl font-bold font-serif text-black mb-6">
-          Get In Touch
-        </h1> */}
         <p className="text-xl text-gray-700 max-w-2xl mx-auto">
           We would love to hear from you! For any inquiries, collaborations, or feedback, feel free to reach out.
         </p>
-      </section>
+      </div>
+      <div className="w-full md:w-1/4 flex justify-center">
+        <Image
+          src="/flower1.jpg"
+          alt="Flower Right"
+          height={210}
+          width={210}
+          layout="intrinsic"
+        />
+      </div>
+    </div>
+  </section>
 
-      {/* Contact Info - Centered with images */}
-      <section className="max-w-4xl mx-auto p-12 mb-16 text-center relative">
-        <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
-          <Image
-            src="/c1.jpg"
-            alt="Flower Left"
-            height={220}
-            width={220}
-            layout="intrinsic"  // Added layout="intrinsic"
-          />
-        </div>
-        <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-          <Image
-            src="/c1.jpg"
-            alt="Flower Right"
-            height={220}
-            width={220}
-            layout="intrinsic"  // Added layout="intrinsic"
-          />
-        </div>
+  {/* Contact Info - Centered with images */}
+  <section className="py-0 px-6 bg-white flex flex-col items-center mt-0">
+    <div className="flex flex-col md:flex-row items-center gap-6 max-w-4xl mx-auto">
+      <div className="w-full md:w-1/4 flex justify-center">
+        <Image
+          src="/c1.jpg"
+          alt="Flower Left"
+          height={220}
+          width={220}
+          layout="intrinsic"
+        />
+      </div>
+      <div className="text-center md:w-1/2">
         <h3 className="text-3xl font-semibold text-black mb-6">
           <MdPhone className="inline-block mr-2 text-pink-700" /> Contact Information
         </h3>
@@ -157,55 +150,64 @@ const ContactPage = () => {
             <span className="text-lg text-gray-600">123 Blossom St, Floral City</span>
           </div>
         </div>
-      </section>
+      </div>
+      <div className="w-full md:w-1/4 flex justify-center">
+        <Image
+          src="/c1.jpg"
+          alt="Flower Right"
+          height={220}
+          width={220}
+          layout="intrinsic"
+        />
+      </div>
+    </div>
+  </section>
 
-{/* Follow Us - Centered with images */}
-<section className="text-center mb-16 relative">
-  <div className="absolute left-0 top-1/2 transform -translate-y-1/2">
-    <Image
-      src="/c6.jpg"
-      alt="Flower Left"
-      height={220}
-      width={220}
-      layout="intrinsic"  // Added layout="intrinsic"
-    />
-  </div>
-  <div className="absolute right-0 top-1/2 transform -translate-y-1/2">
-    <Image
-      src="/c6.jpg"
-      alt="Flower Right"
-      height={220}
-      width={220}
-      layout="intrinsic"  // Added layout="intrinsic"
-    />
-  </div>
-
-  {/* Heading with Share Icon */}
-  <h3 className="text-3xl font-semibold text-black mb-4 flex items-center justify-center">
-    <FaShareAlt className="text-pink-700 mr-2" /> Connect With Us
-  </h3>
-
-  {/* Small Paragraph */}
-  <p className="text-lg text-gray-600 mb-6 max-w-lg mx-auto">
-    Join us on our social media channels to stay updated with the latest news, offers, and inspirations from Floral Elegance. We’re excited to connect and share with you!
-  </p>
-
-  {/* Social Media Icons */}
-  <div className="flex justify-center space-x-8">
-    <a href="https://www.facebook.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
-      <FaFacebook size={36} className="text-blue-600 hover:text-blue-700" />
-    </a>
-    <a href="https://www.instagram.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
-      <FaInstagram size={36} className="text-pink-500 hover:text-pink-600" />
-    </a>
-    <a href="https://www.twitter.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
-      <FaTwitter size={36} className="text-blue-200 hover:text-blue-300" />
-    </a>
-    <a href="https://www.pinterest.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
-      <FaPinterest size={36} className="text-red-500 hover:text-red-600" />
-    </a>
-  </div>
-</section>
+  {/* Follow Us - Centered with images */}
+  <section className="py-0 px-6 bg-white flex flex-col items-center mt-0">
+    <div className="flex flex-col md:flex-row items-center gap-6 max-w-4xl mx-auto">
+      <div className="w-full md:w-1/4 flex justify-center">
+        <Image
+          src="/c6.jpg"
+          alt="Flower Left"
+          height={220}
+          width={220}
+          layout="intrinsic"
+        />
+      </div>
+      <div className="text-center md:w-1/2">
+        <h3 className="text-3xl font-semibold text-black mb-4 flex items-center justify-center">
+          <FaShareAlt className="text-pink-700 mr-2" /> Connect With Us
+        </h3>
+        <p className="text-lg text-gray-600 mb-6 max-w-lg mx-auto">
+          Join us on our social media channels to stay updated with the latest news, offers, and inspirations from Floral Elegance. We’re excited to connect and share with you!
+        </p>
+        <div className="flex justify-center space-x-8">
+          <a href="https://www.facebook.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
+            <FaFacebook size={36} className="text-blue-600 hover:text-blue-700" />
+          </a>
+          <a href="https://www.instagram.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
+            <FaInstagram size={36} className="text-pink-500 hover:text-pink-600" />
+          </a>
+          <a href="https://www.twitter.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
+            <FaTwitter size={36} className="text-blue-200 hover:text-blue-300" />
+          </a>
+          <a href="https://www.pinterest.com/floralelegance" target="_blank" className="text-rose-600 hover:text-rose-700 transition duration-300">
+            <FaPinterest size={36} className="text-red-500 hover:text-red-600" />
+          </a>
+        </div>
+      </div>
+      <div className="w-full md:w-1/4 flex justify-center">
+        <Image
+          src="/c6.jpg"
+          alt="Flower Right"
+          height={220}
+          width={220}
+          layout="intrinsic"
+        />
+      </div>
+    </div>
+  </section>
 
 {/* Contact Form */}
 <section className="max-w-4xl mx-auto p-12 mt-4 text-center font-serif relative">

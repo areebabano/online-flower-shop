@@ -7,7 +7,7 @@ import { TbBrightnessUpFilled } from 'react-icons/tb';
 
 const AboutPage = () => {
   return (
-    <div className="bg-white text-gray-900 pt-20">
+    <div className="bg-white text-gray-900 mt-10 font-serif">
 
       {/* Hero Section
       <section className="relative">
@@ -161,17 +161,17 @@ const AboutPage = () => {
 
 
 
- {/* Call to Action */}
+{/* Call to Action */}
 <div className="bg-gradient-to-r from-pink-500 to-pink-700 text-white font-serif py-10">
   <div className="container mx-auto px-6 text-center">
-  <h2 className="text-2xl font-extrabold text-yellow-300 mb-4 flex items-center justify-center">
-  <span className="text-yellow-300 inline-flex">
-    <TbBrightnessUpFilled className="mr-3" size={28} />
-  </span>
-  Brighten Your Day! <span className="text-white ml-2"> with Flowers!🌸🌼</span>
-</h2>
+    <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold text-yellow-300 mb-4 flex items-center justify-center">
+      <span className="text-yellow-300 inline-flex">
+        <TbBrightnessUpFilled className="mr-3" size={28} />
+      </span>
+      Brighten Your Day! <span className="text-white ml-2">with Flowers!🌸🌼</span>
+    </h2>
 
-    <p className="text-lg max-w-2xl mx-auto mb-6">
+    <p className="text-base sm:text-lg md:text-xl max-w-2xl mx-auto mb-6">
       Discover stunning floral arrangements for every occasion. From weddings to birthdays, we have the perfect bouquet for you.
     </p>
     <a
@@ -182,6 +182,7 @@ const AboutPage = () => {
     </a>
   </div>
 </div>
+
 
 
 {/* Contact Information Section */}
