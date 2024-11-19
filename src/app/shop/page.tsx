@@ -46,6 +46,8 @@ const FlowerShopSection: React.FC = () => {
     { id: 20, name: 'Begonias', description: 'Colorful and long-lasting', price: 18, image: '/begonias.jpg' },
   ];
 
+  console.log(addedToCart);
+  
   const handleQuickView = (product: Product) => {
     setQuickViewProduct(product);
     setAddedToCart(false); // Reset the added to cart state when opening the modal
